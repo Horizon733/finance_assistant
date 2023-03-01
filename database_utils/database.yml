@@ -1,5 +1,6 @@
 users:
-  - name: John Doe
+  "john.doe@example.com":
+    name: John Doe
     email: john.doe@example.com
     password: johndoe123
     account:
@@ -26,7 +27,6 @@ users:
           amount: -500.00
           image_url: https://source.unsplash.com/hTUZW7E7krg/w=600
     electricity_bill:
-      due: false
       amount: 150.00
     has_credit_card: true
     credit_card:
@@ -35,27 +35,27 @@ users:
       bill_amount: 1000.00
       transactions:
         - date: 2023-02-27
-          description: "Online shopping"
+          description: Online shopping
           amount: -250.00
-          image_url: "https://example.com/transaction6.jpg"
+          image_url: https://source.unsplash.com/hTUZW7E7krg/w=600
         - date: 2023-02-26
-          description: "Flight tickets"
+          description: Flight tickets
           amount: -950.00
-          image_url: "https://example.com/transaction7.jpg"
+          image_url: https://source.unsplash.com/GtEobzvRBXU/w=600
         - date: 2023-02-25
-          description: "Hotel booking"
+          description: Hotel booking
           amount: -400.00
-          image_url: "https://example.com/transaction8.jpg"
+          image_url: https://source.unsplash.com/n_IKQDCyrG0/w=600
         - date: 2023-02-24
-          description: "Restaurant bill"
+          description: Restaurant bill
           amount: -150.00
-          image_url: "https://example.com/transaction9.jpg"
+          image_url: https://source.unsplash.com/3iexvMShGfQ/w=600
         - date: 2023-02-23
-          description: "Online shopping"
+          description: Online shopping
           amount: -50.00
-          image_url: "https://example.com/transaction10.jpg"
-
-  - name: Jane Smith
+          image_url: https://source.unsplash.com/hTUZW7E7krg/w=600hotel
+  "jane.smith@example.com":
+    name: Jane Smith
     email: jane.smith@example.com
     password: janesmith123
     has_credit_card: false
@@ -83,10 +83,9 @@ users:
           amount: -100.00
           image_url: https://source.unsplash.com/ixS7UCRJTdM/w=600
     electricity_bill:
-      due: true
       amount: 75.00
-
-  - name: Alice
+  "alice@example.com":
+    name: Alice
     email: alice@example.com
     password: password
     account:
@@ -113,10 +112,30 @@ users:
           amount: -5.00
           image_url: https://source.unsplash.com/zUNs99PGDg0/w=600
     electricity_bill:
-      due: true
       amount: 102.00
     has_credit_card: true
     credit_card:
       card_number: 1234 5678 9012 3456
       bill_due: false
       bill_amount: 1000.00
+      transactions:
+        - date: 2023-02-27
+          description: Online shopping
+          amount: -250.00
+          image_url: https://source.unsplash.com/hTUZW7E7krg/w=600
+        - date: 2023-02-26
+          description: Flight tickets
+          amount: -950.00
+          image_url: https://source.unsplash.com/GtEobzvRBXU/w=600
+        - date: 2023-02-25
+          description: Hotel booking
+          amount: -400.00
+          image_url: https://source.unsplash.com/n_IKQDCyrG0/w=600
+        - date: 2023-02-24
+          description: Restaurant bill
+          amount: -150.00
+          image_url: https://source.unsplash.com/3iexvMShGfQ/w=600
+        - date: 2023-02-23
+          description: Online shopping
+          amount: -50.00
+          image_url: https://source.unsplash.com/hTUZW7E7krg/w=600

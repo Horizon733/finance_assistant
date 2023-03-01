@@ -28,16 +28,6 @@ slots:
     mappings:
       type: from_entity
       entity: amount-of-money
-  confirm_amount:
-    type: text
-    influence_conversation: false
-    mappings:
-    - type: from_intent
-      intent: affirm
-      value: yes
-    - type: from_intent
-      intent: deny
-      value: no
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -57,7 +47,6 @@ responses:
 actions:
   - action_ask_bill_pay_confirm_amount
   - validate_transfer_form
-  - validate_bill_pay_form
   - action_show_credit_card_statement
   - action_show_mini_statement
   - action_show_balance
@@ -66,9 +55,6 @@ forms:
     required_slots:
       - email
       - amount
-  bill_pay_form:
-      - email
-      - confirm_amount
 
 session_config:
   session_expiration_time: 60
