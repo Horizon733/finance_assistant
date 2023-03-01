@@ -1,0 +1,45 @@
+version: "3.1"
+
+nlu:
+- intent: ask_account_balance
+  examples: |
+    - Can you tell me my current account balance?
+    - I want to check my account balance.
+    - What is my available account balance?
+    - How much money do I have in my account?
+    - Can you give me an update on my account balance?
+    - I'd like to know my account balance as of today.
+    - What's the balance in my savings account?
+    - Can you tell me the balance in my checking account?
+    - I want to check the balance in my current account.
+    - How much do I have in my account after my last transaction?
+    - show account balance
+
+- intent: ask_mini_statement
+  examples: |
+    - Can you provide me with my account mini statement?
+    - I need to see my recent transactions in my account.
+    - What are the last five transactions in my account?
+    - Can you show me my account activity for the past week?
+    - I want to check my account statement for the last month.
+    - Can you send me a mini statement for my savings account?
+    - How can I get a mini statement of my account?
+    - I'd like to know the details of my recent transactions.
+    - What is the quickest way to view my account mini statement?
+    - I need to check my account mini statement to see my spending.
+    - mini statement
+    - account statement
+
+- intent: ask_credit_card_statement
+  examples: |
+    - Can you show me my credit card statement for the current billing cycle?
+    - I'd like to see the transactions on my credit card statement.
+    - Can you tell me the outstanding balance on my credit card statement?
+    - How much do I owe on my credit card statement?
+    - I want to know the due date for my credit card statement.
+    - Can you provide me with a copy of my credit card statement?
+    - What is the minimum payment due on my credit card statement?
+    - I need to check my credit card statement to see my spending.
+    - How do I view my credit card statement online?
+    - Can you help me understand the charges on my credit card statement?
+    - show credit card statement

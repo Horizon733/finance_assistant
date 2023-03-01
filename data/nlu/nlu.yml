@@ -1,91 +1,30 @@
 version: "3.1"
 
 nlu:
-- intent: greet
+- intent: ask_bill_pay
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - I need to pay my electricity bill for this month.
+    - Can you help me make a payment towards my electricity bill?
+    - I want to settle my outstanding electricity bill.
+    - How do I pay my electricity bill?
+    - I'd like to make an online payment for my electricity bill.
+    - Can you assist me in paying my electricity bill?
+    - I want to pay my electricity bill before the due date.
+    - How much do I owe for my electricity bill?
+    - Can you tell me the payment options available for my electricity bill?
+    - I need to make a payment for my overdue electricity bill.
+    - pay bill
 
-- intent: goodbye
+- intent: ask_transfer_money
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - I want to transfer money to my friend's bank account.
+    - Can you help me send money to my sister?
+    - I need to make a money transfer to my business partner.
+    - How do I transfer money to another account?
+    - I'd like to make an online money transfer to my mother.
+    - Can you assist me in transferring money to my son's account?
+    - I want to send money to someone in a different country.
+    - How much can I transfer per day?
+    - Can you tell me the steps to follow for a successful money transfer?
+    - I need to transfer money urgently to my brother's account.
+    - transfer money
