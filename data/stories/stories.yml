@@ -2,57 +2,19 @@ version: "3.1"
 
 stories:
 
-- story: ask email - credit card
+- story: greet
   steps:
-  - intent: greet
-  - action: utter_greet
+    - intent: greet
+    - action: utter_greet
+
+- story: credit card statement
+  steps:
   - intent: ask_credit_card_statement
-  - slot_was_set:
-    - email: null
-  - action: utter_ask_email
-  - intent: general
   - action: action_show_credit_card_statement
 
-- story: happy path - credit card
+- story: account balance
   steps:
-    - intent: greet
-    - action: utter_greet
-    - intent: ask_credit_card_statement
-    - action: action_show_credit_card_statement
-
-- story: ask email - account balance
-  steps:
-    - intent: greet
-    - action: utter_greet
-    - intent: ask_account_balance
-    - slot_was_set:
-      - email: null
-    - action: utter_ask_email
-    - intent: general
-    - action: action_show_balance
-
-- story: happy path - account balance
-  steps:
-    - intent: greet
-    - action: utter_greet
     - intent: ask_account_balance
     - action: action_show_balance
 
-- story: ask email - mini statement
-  steps:
-    - intent: greet
-    - action: utter_greet
-    - intent: ask_mini_statement
-    - slot_was_set:
-      - email: null
-    - action: utter_ask_email
-    - intent: general
-    - action: action_show_mini_statement
-
-- story: happy path - mini statement
-  steps:
-    - intent: greet
-    - action: utter_greet
-    - intent: ask_mini_statement
-    - action: action_show_mini_statement
 

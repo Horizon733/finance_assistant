@@ -69,13 +69,14 @@ nlu:
 
 - intent: general
   examples: |
-    - My email is john@example.com.
-    - You can reach me at sarah@email.com.
-    - Here is my email address: tom@email.com.
-    - I can be contacted at jennifer@example.com.
-    - My email address is jack@example.com.
-    - You can email me at lucy@example.com.
-    - My contact email is alex@example.com.
-    - You can reach me at kate@example.com.
-    - Here is my email: max@example.com.
-    - My email is linda@example.com.
+    - My email is [john@example.com](email).
+    - You can reach me at [sarah@email.com](email).
+    - Here is my email address: [tom@email.com](email).
+    - I can be contacted at [jennifer@example.com](email).
+    - My email address is [jack@example.com](email).
+    - You can email me at [lucy@example.com](email).
+    - My contact email is [alex@example.com](email).
+    - You can reach me at [kate@example.com](email).
+    - Here is my email: [max@example.com](email).
+    - My email is [linda@example.com](email)
+    - [joe.doe@example.com](email)

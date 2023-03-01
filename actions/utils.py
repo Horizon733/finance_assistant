@@ -15,7 +15,13 @@ def to_carousels(data):
         single_element = {
             "title": single_item[DB_DESCRIPTION_COLUMN],
             "subtitle": f"{single_item[DB_AMOUNT_COLUMN]} on {single_item[DB_DATE_COLUMN]}",
-            "image_url": single_item[DB_IMAGE_URL_COLUMN]
+            "image_url": single_item[DB_IMAGE_URL_COLUMN],
+            "buttons": [{
+                "title": "Hi",
+                "payload": "hi",
+                "type": "postback"
+            }]
         }
         elements.append(single_element)
-    message[ELEMENTS] = elements
+    message["payload"][ELEMENTS] = elements
+    return message

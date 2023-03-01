@@ -10,6 +10,7 @@ intents:
   - ask_account_balance
   - ask_bill_pay
   - ask_transfer_money
+  - general
 
 entities:
 - email
@@ -20,14 +21,20 @@ slots:
     type: text
     influence_conversation: false
     mappings:
-      type: from_entity
+    - type: from_entity
       entity: email
+      conditions:
+        - requested_slot: email
+          active_loop: login
   amount:
     type: text
     influence_conversation: false
     mappings:
-      type: from_entity
+    - type: from_entity
       entity: amount-of-money
+      conditions:
+        - requested_slot: amount
+          active_loop: transfer_form
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -36,25 +43,42 @@ responses:
   - text: "Bye"
 
   utter_ask_email:
-    - text: Can you please provide your email address to look up your data?
+    - text: Can you please provide your email address to look into our accounts?
 
   utter_ask_transfer_form_amount:
-    - text: To transfer money, how much amount would you like to transfer?
+    - text: Sure, how much amount would you like to transfer?
 
   utter_confirm_amount:
     - text: Current bill amount is {bill_amount}, would you like to pay all?
 
+  utter_transfer_success:
+    - text: "I have transferred ${amount}."
+
+  utter_login_success:
+    - text: You have been logged in successfully
+      buttons:
+        - title: Check Account balance
+          payload: Show account balance
+        - title: Check credit card statement
+          payload: Show credit card statement
+
+  utter_login_failed:
+    - text: Sorry, I have not found any account associated with {email}, Please try again
+
 actions:
   - action_ask_bill_pay_confirm_amount
-  - validate_transfer_form
   - action_show_credit_card_statement
   - action_show_mini_statement
   - action_show_balance
+  - action_slot_reset
+  - action_login
 forms:
   transfer_form:
     required_slots:
-      - email
       - amount
+  login:
+    required_slots:
+      - email
 
 session_config:
   session_expiration_time: 60

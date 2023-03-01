@@ -7,7 +7,35 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: transfer money - activate
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - intent: ask_transfer_money
+  - action: transfer_form
+  - active_loop: transfer_form
+
+- rule: transfer money - deactivate
+  steps:
+  - action: transfer_form
+  - active_loop: transfer_form
+  - active_loop: null
+  - action: utter_transfer_success
+  - action: action_slot_reset
+
+- rule: login deactivated
+  condition:
+    - active_loop: login
+  steps:
+    - action: login
+    - active_loop: login
+    - active_loop: null
+    - action: action_login
+
+- rule: account balance
+  steps:
+    - intent: ask_account_balance
+    - action: action_show_balance
+
+- rule: credit card statement
+  steps:
+  - intent: ask_credit_card_statement
+  - action: action_show_credit_card_statement
