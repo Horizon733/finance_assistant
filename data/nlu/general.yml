@@ -1,0 +1,81 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - Accept
+    - Awesome!
+    - Good
+    - Great
+    - I accept
+    - I accept.
+    - I agree
+    - Yep that's fine
+    - Yep!
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - NEIN
+    - NO
+    - NO DON"T WANT THIS!
+    - Nopes
+    - Not really
+    - absolutely not
+    - never
+    - never mind
+    - no :(
+
+- intent: general
+  examples: |
+    - My email is john@example.com.
+    - You can reach me at sarah@email.com.
+    - Here is my email address: tom@email.com.
+    - I can be contacted at jennifer@example.com.
+    - My email address is jack@example.com.
+    - You can email me at lucy@example.com.
+    - My contact email is alex@example.com.
+    - You can reach me at kate@example.com.
+    - Here is my email: max@example.com.
+    - My email is linda@example.com.

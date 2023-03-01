@@ -1,0 +1,122 @@
+users:
+  - name: John Doe
+    email: john.doe@example.com
+    password: johndoe123
+    account:
+      account_balance: 5000.00
+      transactions:
+        - date: 2023-02-27
+          description: Grocery shopping
+          amount: -75.00
+          image_url: https://source.unsplash.com/ixS7UCRJTdM/w=600
+        - date: 2023-02-26
+          description: Gas bill payment
+          amount: -50.00
+          image_url: https://source.unsplash.com/0aJOTBQfEFE/w=600
+        - date: 2023-02-25
+          description: Salary credit
+          amount: 2000.00
+          image_url: https://source.unsplash.com/8lnbXtxFGZw/w=600
+        - date: 2023-02-25
+          description: Movie tickets
+          amount: -100.00
+          image_url: https://source.unsplash.com/J39X2xX_8CQ/w=600
+        - date: 2023-02-25
+          description: Online shopping
+          amount: -500.00
+          image_url: https://source.unsplash.com/hTUZW7E7krg/w=600
+    electricity_bill:
+      due: false
+      amount: 150.00
+    has_credit_card: true
+    credit_card:
+      card_number: 1234 5678 9012 3456
+      bill_due: true
+      bill_amount: 1000.00
+      transactions:
+        - date: 2023-02-27
+          description: "Online shopping"
+          amount: -250.00
+          image_url: "https://example.com/transaction6.jpg"
+        - date: 2023-02-26
+          description: "Flight tickets"
+          amount: -950.00
+          image_url: "https://example.com/transaction7.jpg"
+        - date: 2023-02-25
+          description: "Hotel booking"
+          amount: -400.00
+          image_url: "https://example.com/transaction8.jpg"
+        - date: 2023-02-24
+          description: "Restaurant bill"
+          amount: -150.00
+          image_url: "https://example.com/transaction9.jpg"
+        - date: 2023-02-23
+          description: "Online shopping"
+          amount: -50.00
+          image_url: "https://example.com/transaction10.jpg"
+
+  - name: Jane Smith
+    email: jane.smith@example.com
+    password: janesmith123
+    has_credit_card: false
+    account:
+      account_balance: 2500.00
+      transactions:
+        - date: 2023-02-27
+          description: Restaurant bill
+          amount: -50.00
+          image_url: https://source.unsplash.com/3iexvMShGfQ/w=600
+        - date: 2023-02-26
+          description: Phone bill payment
+          amount: -35.00
+          image_url: https://source.unsplash.com/xsGxhtAsfSA/w=600
+        - date: 2023-02-25
+          description: Rent payment
+          amount: -1200.00
+          image_url: https://source.unsplash.com/0yfWDwHOB0g/w=600
+        - date: 2023-02-25
+          description: Gas refill
+          amount: -30.00
+          image_url: https://source.unsplash.com/0aJOTBQfEFE/w=600
+        - date: 2023-02-25
+          description: Groceries
+          amount: -100.00
+          image_url: https://source.unsplash.com/ixS7UCRJTdM/w=600
+    electricity_bill:
+      due: true
+      amount: 75.00
+
+  - name: Alice
+    email: alice@example.com
+    password: password
+    account:
+      account_balance: 1700.00
+      transactions:
+        - date: 2023-02-27
+          description: Netflix subscription
+          amount: -15.00
+          image_url: https://source.unsplash.com/AWOl7qqsffM/w=600
+        - date: 2023-02-26
+          description: Dinner with friends
+          amount: -75.00
+          image_url: https://source.unsplash.com/3iexvMShGfQ/w=600
+        - date: 2023-02-25
+          description: Online shopping
+          amount: -50.00
+          image_url: https://source.unsplash.com/hTUZW7E7krg/w=600
+        - date: 2023-02-24
+          description: Haircut
+          amount: -20.00
+          image_url: https://source.unsplash.com/VjRpkGtS55w/w=600
+        - date: 2023-02-23
+          description: Coffee
+          amount: -5.00
+          image_url: https://source.unsplash.com/zUNs99PGDg0/w=600
+    electricity_bill:
+      due: true
+      amount: 102.00
+    has_credit_card: true
+    credit_card:
+      card_number: 1234 5678 9012 3456
+      bill_due: false
+      bill_amount: 1000.00
