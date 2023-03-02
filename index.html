@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finance bot</title>
+</head>
+<script>!(function () {
+            let e = document.createElement("script"),
+              t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+              "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+              (e.async = !0),
+              (e.onload = () => {
+                window.WebChat.default(
+                  {
+                    customData: { language: "en" },
+                    socketUrl: "http://localhost:5005/",
+                    title: 'Rasa bot',
+                    subtitle: 'Say hi and get started!'
+                  },
+                  null
+                );
+              }),
+              t.insertBefore(e, t.firstChild);
+          })();
+          </script>
+</html>
